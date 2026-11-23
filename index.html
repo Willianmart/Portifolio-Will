@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Portfólio de Willian Martinez — HTML estático para GitHub Pages -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Willian Martinez | Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de Willian Martinez — Desenvolvedor Full Stack em Videira, SC. TypeScript, React, Node.js, PostgreSQL e mais." />
+  <meta name="author" content="Willian Martinez" />
+  <meta name="theme-color" content="#0a1628" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Willian Martinez | Desenvolvedor Full Stack" />
+  <meta property="og:description" content="Desenvolvedor Full Stack em Videira, Santa Catarina. Construo aplicações web modernas com TypeScript, React e Node.js." />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:url" content="https://willianmart.github.io/Portifolio-Will/" />
+  <meta property="og:site_name" content="Willian Martinez" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Willian Martinez | Desenvolvedor Full Stack" />
+  <meta name="twitter:description" content="Desenvolvedor Full Stack em Videira, SC — TypeScript, React, Node.js." />
+
+  <link rel="canonical" href="https://willianmart.github.io/Portifolio-Will/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- Fixed navigation -->
+  <header class="site-header" id="topo">
+    <nav class="nav" aria-label="Principal">
+      <a class="nav__brand" href="#inicio">WM</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Alternar tema claro ou escuro" title="Tema">
+        <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <circle cx="12" cy="12" r="4" />
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+        </svg>
+        <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" />
+        </svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <!-- Hero: one composition, brand-first (name as hero signal), full-bleed -->
+    <section class="hero" id="inicio" aria-label="Apresentação">
+      <div class="hero__atmosphere" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="hero__eyebrow reveal">Videira · Santa Catarina · Brasil</p>
+        <h1 class="hero__name reveal">Willian Martinez</h1>
+        <p class="hero__role reveal">Desenvolvedor Full Stack</p>
+        <p class="hero__lead reveal">
+          Construo experiências digitais sólidas — do backend ao interface —
+          com foco em clareza, performance e código que dura.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="https://wa.me/5549998219362" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.992-1.402A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 0 1-4.265-1.224l-.306-.184-3.051.857.84-2.954-.2-.316A7.962 7.962 0 0 1 4 12a8 8 0 1 1 8 8z"/></svg>
+            WhatsApp
+          </a>
+          <a class="btn btn--ghost" href="#projetos">Ver projetos</a>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#sobre" aria-label="Rolar para sobre mim">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Sobre mim -->
+    <section class="section section--about" id="sobre">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__label">Quem sou</p>
+          <h2 class="section__title">Sobre mim</h2>
+        </header>
+        <div class="about reveal">
+          <p>
+            Sou <strong>Willian Martinez</strong>, desenvolvedor full stack baseado em
+            <strong>Videira, Santa Catarina</strong>. Trabalho com tipagem forte,
+            APIs bem desenhadas e interfaces que respeitam o usuário —
+            do protótipo ao deploy.
+          </p>
+          <p>
+            Fluente em <strong>português</strong> e <strong>inglês</strong>, gosto de
+            transformar problemas reais em software claro: dados confiáveis no
+            PostgreSQL, lógica em Node.js ou C#, e front-ends em React e TypeScript.
+          </p>
+          <ul class="about__meta">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Videira, SC · Brasil
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Português · Inglês
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="section section--skills" id="habilidades">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__label">Stack</p>
+          <h2 class="section__title">Habilidades</h2>
+          <p class="section__lead">Ferramentas que uso no dia a dia para entregar produtos completos.</p>
+        </header>
+        <ul class="skills reveal">
+          <li class="skill"><span class="skill__name">TypeScript</span></li>
+          <li class="skill"><span class="skill__name">Node.js</span></li>
+          <li class="skill"><span class="skill__name">React</span></li>
+          <li class="skill"><span class="skill__name">HTML5</span></li>
+          <li class="skill"><span class="skill__name">CSS3</span></li>
+          <li class="skill"><span class="skill__name">PostgreSQL</span></li>
+          <li class="skill"><span class="skill__name">Python</span></li>
+          <li class="skill"><span class="skill__name">C#</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projetos (demo/sample até existirem reais) -->
+    <section class="section section--projects" id="projetos">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__label">Seleção</p>
+          <h2 class="section__title">Projetos</h2>
+          <p class="section__lead">Exemplos demonstrativos — serão substituídos por trabalhos reais.</p>
+        </header>
+        <div class="projects">
+          <article class="project reveal">
+            <p class="project__tag">Demo</p>
+            <h3 class="project__title">Fluxo Clínico</h3>
+            <p class="project__desc">
+              Painel de acompanhamento de atendimentos com filas em tempo real,
+              autenticação e relatórios — stack React + Node + PostgreSQL.
+            </p>
+            <ul class="project__tech" aria-label="Tecnologias">
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="project reveal">
+            <p class="project__tag">Demo</p>
+            <h3 class="project__title">API de Estoque</h3>
+            <p class="project__desc">
+              API REST tipada para controle de inventário, com validações,
+              paginação e integração a painel administrativo.
+            </p>
+            <ul class="project__tech" aria-label="Tecnologias">
+              <li>Node.js</li>
+              <li>TypeScript</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </article>
+          <article class="project reveal">
+            <p class="project__tag">Demo</p>
+            <h3 class="project__title">Portal Institucional</h3>
+            <p class="project__desc">
+              Site institucional responsivo com CMS leve, formulários e
+              SEO básico — HTML, CSS e JavaScript puro no front.
+            </p>
+            <ul class="project__tech" aria-label="Tecnologias">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="section section--contact" id="contato">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="section__label">Vamos conversar</p>
+          <h2 class="section__title">Contato</h2>
+          <p class="section__lead">Prefiro WhatsApp para respostas rápidas. E-mail e GitHub também estão abertos.</p>
+        </header>
+        <div class="contact reveal">
+          <a class="contact__item contact__item--primary" href="https://wa.me/5549998219362" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.992-1.402A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18a8 8 0 0 1-4.265-1.224l-.306-.184-3.051.857.84-2.954-.2-.316A7.962 7.962 0 0 1 4 12a8 8 0 1 1 8 8z"/></svg>
+            <span>
+              <strong>WhatsApp</strong>
+              <small>+55 49 99821-9362</small>
+            </span>
+          </a>
+          <a class="contact__item" href="mailto:willexus.w97@gmail.com">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>
+              <strong>E-mail</strong>
+              <small>willexus.w97@gmail.com</small>
+            </span>
+          </a>
+          <a class="contact__item" href="https://github.com/Willianmart" target="_blank" rel="noopener noreferrer">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            <span>
+              <strong>GitHub</strong>
+              <small>@Willianmart</small>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Willian Martinez</p>
+      <p class="footer__note">Desenvolvedor Full Stack · Videira, SC</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
