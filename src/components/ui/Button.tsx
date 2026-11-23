@@ -21,12 +21,14 @@ type Common = {
 };
 
 type ButtonAsButton = Common &
-  ComponentPropsWithoutRef<"button"> & { href?: undefined };
+  Omit<ComponentPropsWithoutRef<"button">, "className" | "children"> & {
+    href?: undefined;
+  };
 
 type ButtonAsLink = Common & {
   href: string;
   external?: boolean;
-} & Omit<ComponentPropsWithoutRef<"a">, "href">;
+} & Omit<ComponentPropsWithoutRef<"a">, "href" | "className" | "children">;
 
 export function Button(props: ButtonAsButton | ButtonAsLink) {
   const { children, className, variant = "primary" } = props;
@@ -37,14 +39,24 @@ export function Button(props: ButtonAsButton | ButtonAsLink) {
   );
 
   if ("href" in props && props.href) {
-    const { href, external, ...rest } = props;
-    if (external || href.startsWith("http") || href.startsWith("mailto") || href.startsWith("https://wa.me")) {
+    const { href, external, children: _c, className: _cl, variant: _v, ...rest } =
+      props;
+    if (
+      external ||
+      href.startsWith("http") ||
+      href.startsWith("mailto") ||
+      href.startsWith("https://wa.me")
+    ) {
       return (
         <a
           href={href}
           className={classes}
           target={external || href.startsWith("http") ? "_blank" : undefined}
-          rel={external || href.startsWith("http") ? "noopener noreferrer" : undefined}
+          rel={
+            external || href.startsWith("http")
+              ? "noopener noreferrer"
+              : undefined
+          }
           {...rest}
         >
           {children}
@@ -58,7 +70,13 @@ export function Button(props: ButtonAsButton | ButtonAsLink) {
     );
   }
 
-  const { ...rest } = props as ButtonAsButton;
+  const {
+    children: _c,
+    className: _cl,
+    variant: _v,
+    href: _h,
+    ...rest
+  } = props as ButtonAsButton;
   return (
     <button type="button" className={classes} {...rest}>
       {children}
