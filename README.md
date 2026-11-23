@@ -1,59 +1,87 @@
 # Portfólio — Willian Martinez
 
-Site estático do portfólio profissional de **Willian Martinez**, Desenvolvedor Full Stack (Videira, SC).
+Portfólio profissional em **Next.js (App Router) + React + TypeScript + Tailwind CSS + Motion + Lucide**, pronto para **Vercel** e exportável para **GitHub Pages**.
 
-**Live:** [https://willianmart.github.io/Portifolio-Will/](https://willianmart.github.io/Portifolio-Will/)
+## URLs
 
-## Contato
-
-| Canal | Valor |
+| Ambiente | URL |
 | --- | --- |
-| WhatsApp | [+55 49 99821-9362](https://wa.me/5549998219362) |
-| E-mail | [willexus.w97@gmail.com](mailto:willexus.w97@gmail.com) |
-| GitHub | [github.com/Willianmart](https://github.com/Willianmart) |
+| Repositório | https://github.com/Willianmart/Portifolio-Will |
+| GitHub Pages (após habilitar Actions) | https://willianmart.github.io/Portifolio-Will/ |
+| Vercel | Importe este repo no [Vercel](https://vercel.com/new) |
 
-## Stack do site
+## Contatos (fonte: `src/data/profile.ts`)
 
-- HTML5, CSS3 e JavaScript puro (sem build, sem frameworks)
-- Fontes: Instrument Serif + Sora (Google Fonts)
-- Ícones em SVG inline
-- Tema claro/escuro com preferência salva em `localStorage`
+- WhatsApp: [+55 49 99821-9362](https://wa.me/5549998219362)
+- E-mail: [willexus.w97@gmail.com](mailto:willexus.w97@gmail.com)
+- GitHub: [Willianmart](https://github.com/Willianmart)
+- LinkedIn: [willian-martinez-31158a39a](https://www.linkedin.com/in/willian-martinez-31158a39a)
 
-## Arquivos
-
-```
-index.html   — estrutura e SEO
-style.css    — layout, temas, animações
-script.js    — tema, nav, reveal
-README.md    — este arquivo
-```
-
-## Como visualizar localmente
-
-Abra `index.html` no navegador ou sirva a pasta:
+## Desenvolvimento
 
 ```bash
-python3 -m http.server 8080 --bind 127.0.0.1
+npm install
+npm run dev
 ```
 
-Acesse `http://127.0.0.1:8080`.
+```bash
+npm run build
+npm start
+```
 
-## GitHub Pages
+### Build estático (GitHub Pages)
 
-Publicado a partir do branch `main`, na raiz do repositório.
+```bash
+npm run build:pages
+# saída em /out com basePath /Portifolio-Will
+```
 
-> Se o site estiver em um project site (`/Portifolio-Will/`), os assets usam caminhos relativos (`style.css`, `script.js`) e funcionam sem base path extra.
+## Variáveis de ambiente
 
-## O que é real vs. demonstrativo
+Veja `.env.example`.
+
+| Variável | Uso |
+| --- | --- |
+| `NEXT_PUBLIC_SITE_URL` | Canonical / OG / sitemap |
+| `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY` | Formulário de contato real (Web3Forms) |
+| `GITHUB_PAGES=true` | Ativa `output: 'export'` + `basePath` `/Portifolio-Will` |
+| `NEXT_PUBLIC_BASE_PATH` | Prefixo público opcional (Pages) |
+
+Sem a chave Web3Forms, o formulário **não finge sucesso**: mostra fallback honesto com mailto e WhatsApp.
+
+## Deploy
+
+### Vercel (recomendado)
+
+1. Importar `Willianmart/Portifolio-Will`
+2. Framework: Next.js (detectado)
+3. **Não** definir `GITHUB_PAGES`
+4. Definir `NEXT_PUBLIC_SITE_URL` com o domínio Vercel
+5. Opcional: `NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY`
+
+### GitHub Pages
+
+1. Settings → Pages → **Source: GitHub Actions**
+2. O workflow `.github/workflows/pages.yml` gera o export estático e publica
+3. Se Actions falhar por permissão, habilite Pages manualmente ou rode o workflow após conceder `pages: write`
+
+## Conteúdo real vs. status honesto
 
 | Item | Status |
 | --- | --- |
-| Nome, cargo, localização, idiomas | Real |
-| WhatsApp, e-mail, GitHub | Real |
-| Tecnologias listadas | Real (stack declarada) |
-| Projetos na seção “Projetos” | **Demonstrativos** — substituir por trabalhos reais |
-| Textos “Sobre mim” | Genéricos — ajustar com biografia pessoal se desejar |
+| Identidade, contatos, LinkedIn, formação em andamento | Real |
+| Alysense (cofundador CEO/CTO), VILA, IA empresas, C# acadêmico | Real, com status explícito |
+| VILA | Validação / preparação para piloto — **não** produto comercial amplamente implantado |
+| IA para empresas | Pesquisa / PoC — **não** produto concluído |
+| Projetos futuros | Área vazia de propósito (sem inventar) |
 
-## Licença
+## Estrutura
 
-Uso pessoal do portfólio de Willian Martinez.
+```
+src/app/                 # App Router
+src/components/          # layout, sections, ui, animations
+src/data/                # profile, projects, experience, skills
+public/images/           # avatar SVG e OG
+```
+
+UI em **pt-BR**. Strings centralizadas em `src/data` para i18n futuro — **sem** seletor de idioma.
