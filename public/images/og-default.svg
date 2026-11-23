@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Willian Martinez — Portfólio">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08090D"/>
+      <stop offset="50%" stop-color="#101218"/>
+      <stop offset="100%" stop-color="#151923"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#7C5CFC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <text x="80" y="250" font-family="ui-sans-serif, system-ui, sans-serif" font-size="64" font-weight="700" fill="#F5F7FA">Willian Martinez</text>
+  <text x="80" y="330" font-family="ui-sans-serif, system-ui, sans-serif" font-size="32" fill="#9299A8">Desenvolvedor de Software · Tecnologia · Inovação</text>
+  <text x="80" y="520" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" letter-spacing="4" fill="#7C5CFC">TECNOLOGIA · DESENVOLVIMENTO · INOVAÇÃO</text>
+</svg>
