@@ -33,9 +33,10 @@ export const metadata: Metadata = {
     siteName: profile.name,
     title: seo.title,
     description: seo.description,
+    // Relative to metadataBase (do not prepend basePath again)
     images: [
       {
-        url: withBasePath(profile.ogImage),
+        url: profile.ogImage,
         width: 1200,
         height: 630,
         alt: profile.name,
@@ -46,9 +47,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: seo.title,
     description: seo.description,
-    images: [withBasePath(profile.ogImage)],
+    images: [profile.ogImage],
   },
   icons: {
+    // Static export needs basePath on relative icon hrefs
     icon: [{ url: withBasePath("/favicon.svg"), type: "image/svg+xml" }],
     apple: [{ url: withBasePath("/images/avatar-willian.svg") }],
   },
