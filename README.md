@@ -1,6 +1,8 @@
-# Portfólio — Willian Martinez
+# WillianMart.DEV — Portfólio de Willian Martinez
 
 Portfólio profissional em **Next.js (App Router) + React + TypeScript + Tailwind CSS + Motion + Lucide**, pronto para **Vercel** e exportável para **GitHub Pages**.
+
+Marca do site: **WillianMart.DEV** (`profile.brand` em `src/data/profile.ts`). Nome pessoal nas seções e SEO: **Willian Martinez**.
 
 ## URLs
 

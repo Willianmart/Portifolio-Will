@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Ilustração gerenciador de tarefas em C# — estruturas de dados">
+  <defs>
+    <linearGradient id="csBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0E14"/>
+      <stop offset="55%" stop-color="#141C28"/>
+      <stop offset="100%" stop-color="#1C2A3E"/>
+    </linearGradient>
+    <radialGradient id="csGlow" cx="80%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#68A0FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#68A0FF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="960" height="600" fill="url(#csBg)"/>
+  <rect width="960" height="600" fill="url(#csGlow)"/>
+  <!-- terminal window -->
+  <rect x="56" y="72" width="520" height="420" rx="18" fill="#0C121C" stroke="#68A0FF" stroke-opacity="0.3"/>
+  <circle cx="86" cy="102" r="6" fill="#FF6B6B" fill-opacity="0.75"/>
+  <circle cx="106" cy="102" r="6" fill="#FFD166" fill-opacity="0.75"/>
+  <circle cx="126" cy="102" r="6" fill="#68A0FF" fill-opacity="0.75"/>
+  <text x="160" y="107" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" fill="#8AA0B8">console · tarefas</text>
+  <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" fill="#B8C7D9">
+    <text x="84" y="160"><tspan fill="#68A0FF">&gt;</tspan> Menu</text>
+    <text x="84" y="195">1. Cadastrar tarefa</text>
+    <text x="84" y="225">2. Listar (lista)</text>
+    <text x="84" y="255">3. Desfazer (pilha)</text>
+    <text x="84" y="285">4. Concluir</text>
+    <text x="84" y="330" fill="#7AD4A8">✓ T001 — Revisar lógica</text>
+    <text x="84" y="360" fill="#68A0FF">○ T002 — Estudar pilhas</text>
+    <text x="84" y="390" fill="#8AA0B8">○ T003 — Menu interativo</text>
+    <text x="84" y="440"><tspan fill="#68A0FF">&gt;</tspan> <tspan fill="#F5F7FA">_</tspan></text>
+  </g>
+  <!-- list structure -->
+  <g transform="translate(620 100)">
+    <text x="0" y="0" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#68A0FF">LISTA</text>
+    <rect y="20" width="260" height="48" rx="10" fill="#152033" stroke="#68A0FF" stroke-opacity="0.4"/>
+    <rect y="80" width="260" height="48" rx="10" fill="#152033" stroke="#68A0FF" stroke-opacity="0.35"/>
+    <rect y="140" width="260" height="48" rx="10" fill="#152033" stroke="#68A0FF" stroke-opacity="0.3"/>
+    <text x="20" y="50" font-family="ui-monospace, monospace" font-size="14" fill="#D6E4F5">node → next</text>
+    <text x="20" y="110" font-family="ui-monospace, monospace" font-size="14" fill="#D6E4F5">node → next</text>
+    <text x="20" y="170" font-family="ui-monospace, monospace" font-size="14" fill="#D6E4F5">node → null</text>
+    <path d="M130 68v12M130 128v12" stroke="#68A0FF" stroke-width="2" stroke-opacity="0.5"/>
+  </g>
+  <!-- stack structure -->
+  <g transform="translate(620 320)">
+    <text x="0" y="0" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" letter-spacing="2" fill="#7C5CFC">PILHA</text>
+    <rect y="16" width="260" height="40" rx="8" fill="#7C5CFC" fill-opacity="0.35" stroke="#A78BFA" stroke-opacity="0.5"/>
+    <rect y="62" width="260" height="40" rx="8" fill="#7C5CFC" fill-opacity="0.22" stroke="#A78BFA" stroke-opacity="0.35"/>
+    <rect y="108" width="260" height="40" rx="8" fill="#7C5CFC" fill-opacity="0.14" stroke="#A78BFA" stroke-opacity="0.25"/>
+    <text x="20" y="42" font-family="ui-monospace, monospace" font-size="13" fill="#EDE9FE">TOP · push / pop</text>
+    <text x="20" y="88" font-family="ui-monospace, monospace" font-size="13" fill="#C4B5FD">…</text>
+    <text x="20" y="134" font-family="ui-monospace, monospace" font-size="13" fill="#A78BFA">base</text>
+  </g>
+  <text x="56" y="545" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="600" fill="#F5F7FA">C# · Estruturas de dados</text>
+  <text x="56" y="575" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" letter-spacing="2" fill="#8AA0B8">PROJETO ACADÊMICO · CONSOLE</text>
+</svg>

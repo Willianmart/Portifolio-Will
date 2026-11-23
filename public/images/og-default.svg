@@ -1,18 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Willian Martinez — Portfólio">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="WillianMart.DEV — Portfólio de Willian Martinez">
   <defs>
     <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#08090D"/>
-      <stop offset="50%" stop-color="#101218"/>
+      <stop offset="45%" stop-color="#101218"/>
       <stop offset="100%" stop-color="#151923"/>
     </linearGradient>
-    <radialGradient id="glow" cx="70%" cy="30%" r="50%">
-      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.45"/>
+    <radialGradient id="glow" cx="78%" cy="25%" r="48%">
+      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#7C5CFC" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="glow2" cx="15%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#5B8CFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#5B8CFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mark" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F5F7FA"/>
+      <stop offset="100%" stop-color="#C4B5FD"/>
+    </linearGradient>
   </defs>
   <rect width="1200" height="630" fill="url(#g)"/>
   <rect width="1200" height="630" fill="url(#glow)"/>
-  <text x="80" y="250" font-family="ui-sans-serif, system-ui, sans-serif" font-size="64" font-weight="700" fill="#F5F7FA">Willian Martinez</text>
-  <text x="80" y="330" font-family="ui-sans-serif, system-ui, sans-serif" font-size="32" fill="#9299A8">Desenvolvedor de Software · Tecnologia · Inovação</text>
-  <text x="80" y="520" font-family="ui-sans-serif, system-ui, sans-serif" font-size="22" letter-spacing="4" fill="#7C5CFC">TECNOLOGIA · DESENVOLVIMENTO · INOVAÇÃO</text>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <g stroke="#7C5CFC" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 126h1200M0 252h1200M0 378h1200M0 504h1200"/>
+    <path d="M150 0v630M300 0v630M450 0v630M600 0v630M750 0v630M900 0v630M1050 0v630"/>
+  </g>
+  <!-- brand mark -->
+  <text x="80" y="230" font-family="ui-sans-serif, system-ui, sans-serif" font-size="72" font-weight="700" fill="url(#mark)">WillianMart</text>
+  <text x="560" y="230" font-family="ui-sans-serif, system-ui, sans-serif" font-size="72" font-weight="700" fill="#7C5CFC">.DEV</text>
+  <text x="80" y="300" font-family="ui-sans-serif, system-ui, sans-serif" font-size="28" fill="#9299A8">Willian Martinez · Software · Tecnologia · Inovação</text>
+  <!-- mini constellation matching avatar -->
+  <g transform="translate(920 380)" stroke="#A78BFA" stroke-width="1.5" fill="none" opacity="0.9">
+    <line x1="-40" y1="-30" x2="0" y2="0"/>
+    <line x1="40" y1="-30" x2="0" y2="0"/>
+    <line x1="0" y1="0" x2="0" y2="35"/>
+    <line x1="-30" y1="55" x2="0" y2="35"/>
+    <line x1="30" y1="55" x2="0" y2="35"/>
+  </g>
+  <g transform="translate(920 380)">
+    <circle cx="-40" cy="-30" r="7" fill="#5B8CFF"/>
+    <circle cx="40" cy="-30" r="7" fill="#7C5CFC"/>
+    <circle cx="0" cy="0" r="9" fill="#2EC4B6"/>
+    <circle cx="0" cy="35" r="7" fill="#A78BFA"/>
+    <circle cx="-30" cy="55" r="5" fill="#5B8CFF"/>
+    <circle cx="30" cy="55" r="5" fill="#7C5CFC"/>
+  </g>
+  <text x="80" y="540" font-family="ui-sans-serif, system-ui, sans-serif" font-size="18" letter-spacing="5" fill="#7C5CFC">TECNOLOGIA · DESENVOLVIMENTO · INOVAÇÃO</text>
 </svg>

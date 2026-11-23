@@ -26,11 +26,12 @@ export const metadata: Metadata = {
   description: seo.description,
   authors: [{ name: profile.name }],
   creator: profile.name,
+  applicationName: profile.brand,
   openGraph: {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    siteName: profile.name,
+    siteName: profile.brand,
     title: seo.title,
     description: seo.description,
     // Relative to metadataBase (do not prepend basePath again)
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
         url: profile.ogImage,
         width: 1200,
         height: 630,
-        alt: profile.name,
+        alt: `${profile.brand} — ${profile.name}`,
       },
     ],
   },

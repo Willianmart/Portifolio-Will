@@ -1,7 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import { copy } from "@/data/profile";
 import { Reveal } from "@/components/animations/Reveal";
+import { withBasePath } from "@/lib/site";
 
 export function Vision() {
   return (
@@ -18,6 +20,17 @@ export function Vision() {
           >
             {copy.vision.title}
           </h2>
+        </Reveal>
+        <Reveal delay={0.08}>
+          <div className="relative mt-8 h-10 w-full max-w-md">
+            <Image
+              src={withBasePath("/images/section-accent.svg")}
+              alt=""
+              fill
+              className="object-contain object-left"
+              aria-hidden
+            />
+          </div>
         </Reveal>
         <div className="mt-10 space-y-6 text-lg leading-relaxed text-muted md:text-xl">
           {copy.vision.body.map((p, i) => (

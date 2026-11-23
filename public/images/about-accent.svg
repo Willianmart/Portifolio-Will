@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" role="img" aria-label="Acento visual tecnológico">
+  <defs>
+    <linearGradient id="accBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#101218"/>
+      <stop offset="100%" stop-color="#151923"/>
+    </linearGradient>
+    <linearGradient id="accLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7C5CFC" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#7C5CFC"/>
+      <stop offset="70%" stop-color="#5B8CFF"/>
+      <stop offset="100%" stop-color="#2EC4B6" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="200" rx="24" fill="url(#accBg)"/>
+  <path d="M40 100 H600" stroke="url(#accLine)" stroke-width="2"/>
+  <g>
+    <circle cx="120" cy="100" r="18" fill="#7C5CFC" fill-opacity="0.25" stroke="#7C5CFC"/>
+    <circle cx="260" cy="70" r="12" fill="#5B8CFF" fill-opacity="0.3" stroke="#5B8CFF"/>
+    <circle cx="360" cy="130" r="14" fill="#2EC4B6" fill-opacity="0.25" stroke="#2EC4B6"/>
+    <circle cx="480" cy="90" r="16" fill="#A78BFA" fill-opacity="0.25" stroke="#A78BFA"/>
+    <path d="M120 100 L260 70 L360 130 L480 90" fill="none" stroke="#9299A8" stroke-opacity="0.45" stroke-width="1.5"/>
+  </g>
+  <text x="40" y="170" font-family="ui-sans-serif, system-ui, sans-serif" font-size="14" letter-spacing="3" fill="#9299A8">DEV · IA · INFRA · EMPREENDEDORISMO</text>
+</svg>

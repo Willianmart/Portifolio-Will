@@ -45,6 +45,18 @@ export function About() {
                 <p>{paragraph}</p>
               </Reveal>
             ))}
+            <Reveal delay={0.28}>
+              <div className="relative mt-4 aspect-[16/5] overflow-hidden rounded-2xl border border-line">
+                <Image
+                  src={withBasePath(profile.aboutAccentSrc)}
+                  alt=""
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 560px"
+                  className="object-cover"
+                  aria-hidden
+                />
+              </div>
+            </Reveal>
           </div>
         </div>
 

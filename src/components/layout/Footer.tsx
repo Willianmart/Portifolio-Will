@@ -2,6 +2,7 @@
 
 import { ArrowUp } from "lucide-react";
 import { contacts, copy, navItems, profile } from "@/data/profile";
+import { BrandMark } from "@/components/ui/BrandMark";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +11,10 @@ export function Footer() {
     <footer className="border-t border-line bg-panel">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-4 py-12 sm:px-6 md:flex-row md:items-start md:justify-between">
         <div>
-          <p className="text-lg font-semibold text-ink">{profile.name}.</p>
+          <p className="text-lg">
+            <BrandMark />
+          </p>
+          <p className="mt-1 text-sm text-muted">{profile.name}</p>
           <p className="mt-2 max-w-sm text-sm text-muted">{copy.footer.tagline}</p>
           <p className="mt-4 text-xs text-muted">© {year}</p>
         </div>

@@ -64,7 +64,7 @@ export default async function ProjectPage({ params }: Props) {
           ) : null}
 
           <div className="mt-8">
-            <ProjectVisual project={project} />
+            <ProjectVisual project={project} priority className="shadow-card" />
           </div>
 
           <div className="prose-wm mt-10 space-y-6 text-base leading-relaxed text-muted md:text-lg">

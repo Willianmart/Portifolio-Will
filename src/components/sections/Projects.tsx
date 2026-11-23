@@ -30,7 +30,7 @@ export function Projects() {
               <article className="group overflow-hidden rounded-3xl border border-line bg-surface/50 transition duration-300 hover:border-accent/35 hover:shadow-card">
                 <div className="grid gap-0 lg:grid-cols-[1.05fr_1fr]">
                   <div className="p-4 sm:p-5">
-                    <ProjectVisual project={project} />
+                    <ProjectVisual project={project} priority={i === 0} />
                   </div>
                   <div className="flex flex-col justify-center p-5 sm:p-8">
                     <div className="mb-3 flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.18em] text-muted">

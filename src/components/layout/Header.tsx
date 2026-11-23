@@ -4,8 +4,9 @@ import Link from "next/link";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { navItems, profile } from "@/data/profile";
+import { navItems } from "@/data/profile";
 import { useActiveSection } from "@/hooks/useActiveSection";
+import { BrandMark } from "@/components/ui/BrandMark";
 import { cn } from "@/lib/utils";
 
 export function Header() {
@@ -43,11 +44,11 @@ export function Header() {
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-4 sm:px-6">
         <Link
           href="/#inicio"
-          className="font-semibold tracking-tight text-ink"
+          className="text-sm sm:text-base"
           onClick={() => setOpen(false)}
+          aria-label="WillianMart.DEV — início"
         >
-          {profile.name.split(" ")[0]}
-          <span className="text-accent">.</span>
+          <BrandMark />
         </Link>
 
         <nav className="ml-auto hidden items-center gap-1 md:flex" aria-label="Principal">

@@ -25,6 +25,8 @@ export type Project = {
     accent: string;
   };
   visual?: "alysense" | "vila" | "ai" | "csharp";
+  /** Original cover art (SVG) for cards and detail heroes */
+  coverSrc: string;
   detailPath: string;
 };
 
@@ -75,6 +77,7 @@ export const projects: Project[] = [
       accent: "#5B8CFF",
     },
     visual: "alysense",
+    coverSrc: "/images/covers/alysense.svg",
     detailPath: "/projetos/alysense",
   },
   {
@@ -128,6 +131,7 @@ export const projects: Project[] = [
       accent: "#2EC4B6",
     },
     visual: "vila",
+    coverSrc: "/images/covers/vila.svg",
     detailPath: "/projetos/vila",
   },
   {
@@ -159,6 +163,7 @@ export const projects: Project[] = [
     participation:
       "Contexto: prova de conceito de IA para suporte técnico e consulta inteligente a documentações autorizadas.",
     visual: "ai",
+    coverSrc: "/images/covers/ai-empresas.svg",
     detailPath: "/projetos/ia-empresas",
     brand: {
       primary: "#12081F",
@@ -190,6 +195,7 @@ export const projects: Project[] = [
     participation:
       "Objetivo: aplicar programação, lógica e estruturas de dados.",
     visual: "csharp",
+    coverSrc: "/images/covers/csharp.svg",
     detailPath: "/projetos/gerenciador-tarefas-csharp",
     brand: {
       primary: "#0E1218",

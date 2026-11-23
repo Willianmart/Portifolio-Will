@@ -6,7 +6,10 @@
 export const locale = "pt-BR" as const;
 
 export const profile = {
+  /** Person's full name — hero, about, SEO title, body copy */
   name: "Willian Martinez",
+  /** Site mark / logo text — nav, footer, loader, favicon/identity, OG siteName */
+  brand: "WillianMart.DEV",
   location: "Videira, Santa Catarina, Brasil",
   tagline: "TECNOLOGIA • DESENVOLVIMENTO • INOVAÇÃO",
   role:
@@ -15,6 +18,7 @@ export const profile = {
     "Não desenvolvo tecnologia apenas para fazer algo funcionar. Desenvolvo soluções para transformar a maneira como os problemas são resolvidos.",
   availability: "Aberto a conversas e colaborações",
   avatarSrc: "/images/avatar-willian.svg",
+  aboutAccentSrc: "/images/about-accent.svg",
   ogImage: "/images/og-default.svg",
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL ??
